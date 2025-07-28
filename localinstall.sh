@@ -16,9 +16,13 @@ module load Boost.Python-NumPy
 
 mkdir -p ./packages
 
-                        #--with-gslib \
-python setup.py install --prefix=./packages/ \
+                        #--with-cuda \
+                        #--with-cuda-hypre \
+                        #--with-gslib \ # Causes error
+                        #--with-libceed \ # Causes compile error
+python setup.py install --prefix=user \
                         --with-parallel \
+                        --with-strumpack \
                         --verbose \
                         --mfem-branch=v4.5
 
