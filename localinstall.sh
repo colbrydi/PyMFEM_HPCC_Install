@@ -1,6 +1,7 @@
 rm -rf PyMFEM
 git clone https://github.com/mfem/PyMFEM.git
 cd PyMFEM
+git checkout v4.5.0.1  
 #python setup.py clean --all
 
 module purge
@@ -19,6 +20,7 @@ mkdir -p ./packages
 python setup.py install --prefix=./packages/ \
                         --with-parallel \
                         --verbose \
-                        --mfem-branch=master 
+                        --mfem-branch=v4.5
+
 #--mfem-branch=master  
 

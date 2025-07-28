@@ -28,3 +28,11 @@ python setup.py install --prefix=./packages/ \
                         --hypre-prefix=$EBROOTHYPRE \
                         --metis-prefix=$EBROOTMETIS  
 
+
+#python setup.py install \
+#    --with-parallel \
+#    --mfem-source=/path/to/mfem \
+#    --mfem-prefix=/path/to/mfem/install \
+#    --hypre-prefix=/path/to/hypre \
+#    --metis-prefix=/path/to/metis
+
