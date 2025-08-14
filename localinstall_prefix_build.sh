@@ -14,8 +14,10 @@ module load SWIG
 module load CMake
 module load Boost.Python-NumPy
 
-                        #--with-strumpack \
-python setup.py install --prefix=user \
+mkdir -p ./packages
+
+                        #--with-gslib \
+python setup.py install --prefix=./packages/ \
                         --with-parallel \
                         --verbose \
                         --mfem-branch=v4.5
