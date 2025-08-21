@@ -1,3 +1,6 @@
+# This script should install PyMFEM in your local python user directory. 
+# ~/.local/lib/Python3.11.1/site-packages/mfem
+
 rm -rf PyMFEM
 git clone https://github.com/mfem/PyMFEM.git
 cd PyMFEM
