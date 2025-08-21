@@ -19,7 +19,7 @@ module load CMake
 module load Boost.Python-NumPy
 
                         #--with-strumpack \
-python setup.py install --prefix=user \
+python setup.py install --user \
                         --with-parallel \
                         --verbose \
                         --mfem-branch=v4.5
