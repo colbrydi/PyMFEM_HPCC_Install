@@ -4,7 +4,7 @@ Tools to install PyMFEM in my home directory on the MSU HPCC:
 ## Step 1: Install pymfem using the following pip command
 
 ```
-pip install --user pymfem
+pip install --user mfem
 pip install --user matplotlib
 ```
 
