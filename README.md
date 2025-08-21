@@ -2,20 +2,28 @@
 Tools to install PyMFEM in my home directory on the MSU HPCC
 
 To install in the ~/.local directory use the following script
-```source ./localinstall.sh```
+```
+source ./localinstall.sh
+```
 
 To activate the install run the following:
-```source ./setmodules.sh```
+```
+source ./setmodules.sh
+```
 
 To clean up everything and start over run the following:
-```source ./clean.sh```
+```
+source ./clean.sh
+```
 
 ## Testing
 
 Upon successfull install you can test if PyMFEM is working using the folloiwng commands:
 
-```python
-import mfem```
+```
+python
+import mfem
+```
 
 Now we will test using jupyter. Go to http://ondemand.hpcc.msu.edu then select "Interactive Apps" --> "Jupyter"
  
