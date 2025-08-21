@@ -1,3 +1,4 @@
+rm -rf packages
 cd PyMFEM
 python setup.py clean --all
 cd ..

@@ -5,6 +5,7 @@ git checkout v4.5.0.1
 #python setup.py clean --all
 
 module purge
+source ../easybuild_local/eb_local_use.sh
 module load Python
 module load mpi4py
 module load OpenBLAS

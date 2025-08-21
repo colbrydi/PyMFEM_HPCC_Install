@@ -1,3 +1,7 @@
+rm -rf ./packages/
+
+mkdir -p ./packages/
+
 rm -rf PyMFEM
 git clone https://github.com/mfem/PyMFEM.git
 cd PyMFEM
@@ -14,10 +18,8 @@ module load SWIG
 module load CMake
 module load Boost.Python-NumPy
 
-mkdir -p ./packages
 
-                        #--with-gslib \
-python setup.py install --prefix=./packages/ \
+python setup.py install --prefix=../packages/ \
                         --with-parallel \
                         --verbose \
                         --mfem-branch=v4.5
